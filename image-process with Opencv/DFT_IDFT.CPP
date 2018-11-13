@@ -1,15 +1,10 @@
-#define _CRT_SECURE_NO_DEPRECATE
-#include <iostream>
-#include <fstream>
-#include <math.h>
-#include <exception>
 #include <cstdio>
-#include <iostream>    
-#include <algorithm>   
-#include <vector>      
 
 #include <opencv2\opencv.hpp>
 #include <opencv2\highgui\highgui.hpp>
+
+using namespace std;
+using namespace cv;
 
 
 void CV_DFT_Transform(Mat input_image, String filename, String idft_name, int row, int col)
