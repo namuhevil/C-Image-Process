@@ -9,8 +9,8 @@ void local_mean(unsigned char **input_image, unsigned char **output_image, int r
     int start = -(mask-1)/2;
     int end = -start;
 
-	for (int i = 0; i < row; i++)
-		for (int j = 0; j < col; j++)
+	for (int idx = 0; idx < row; idx++)
+		for (int idy = 0; idy < col; idy++)
 		{
 			sum = 0;
 			mean = 0;
@@ -18,22 +18,22 @@ void local_mean(unsigned char **input_image, unsigned char **output_image, int r
 			{
 				for (int y = start; y <= end; y++)
 				{
-					if (i < end || j < end || i > row - end - 1 || j > col - end -1)
+					if (idx < end || idy < end || idx> row - end - 1 || idy > col - end -1)
 					{
-						Kernel[x + end][y + end] = input_image[i][j];
-						if (j < end && j > col - end -1)
+						Kernel[x + end][y + end] = input_image[i][idy];
+						if (idy < end && idy > col - end -1)
 						{
-							Kernel[x + end][y + end] = input_image[i][j + y];
+							Kernel[x + end][y + end] = input_image[i][idy + y];
 						}
 
-						if (i < end && i > row - end -1)
+						if (idx< end && idx> row - end -1)
 						{
-							Kernel[x + end][y + end] = input_image[i + x][j];
+							Kernel[x + end][y + end] = input_image[idx+ x][idy];
 						}
 					}
 					else
 					{
-						Kernel[x + end][y + end] = input_image[i + x][j + y];
+						Kernel[x + end][y + end] = input_image[idx+ x][idy + y];
 					}
 					mean += Kernel[x + end][y + end] * Kernel[x + end][y + end];
 					sum += Kernel[x + end][y + end];
@@ -44,6 +44,6 @@ void local_mean(unsigned char **input_image, unsigned char **output_image, int r
 				sum = 1;
 			}
 			expectation = mean / sum;
-			output_image[i][j] = expectation;
+			output_image[idx][idy] = expectation;
 		}
 }
