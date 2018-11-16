@@ -1,0 +1,49 @@
+unsigned char **img_matrix;
+img_matrix = new unsigned char*[row];
+img_matrix[0] = new unsigned char[row * col];
+make_matrix(img_matrix, row, col);
+	
+	void make_matrix(unsigned char** input_matrix, int row, int col)
+{
+	for (int idx = 0; idx < row; idx++)
+	{
+		input_matrix[idx] = input_matrix[0] + idx * col;
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////
+
+class Img2Matrix  {
+
+	public:
+		Img2Matrix() 
+		{
+			_row = 0;
+			_col = 0;
+		}
+		// get row and col from matrix
+		Img2Matrix(int row, int col, unsigned char** img_matrix):_row(row), _col(col), _img_matrix(img_matrix)
+		{
+		}
+
+		int row() { return _row; }
+		int col() { return _col; }
+		unsigned char** img_matrix() { return _img_matrix; }
+
+		void row(int row)
+		{
+			_row = row;
+		}
+		void col(int col)
+		{
+			_col = col;
+		}
+		void col(int row, int col, unsigned char** img_matrix)
+		{
+
+		}
+	private:
+		int _row;
+		int _col;
+		unsigned char **_img_matrix;
+};

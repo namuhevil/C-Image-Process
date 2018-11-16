@@ -23,7 +23,7 @@ void local_mean(unsigned char **input_image, unsigned char **output_image, int r
 						Kernel[x + end][y + end] = input_image[i][idy];
 						if (idy < end && idy > col - end -1)
 						{
-							Kernel[x + end][y + end] = input_image[i][idy + y];
+							Kernel[x + end][y + end] = input_image[idx][idy + y];
 						}
 
 						if (idx< end && idx> row - end -1)

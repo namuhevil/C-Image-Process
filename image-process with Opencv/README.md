@@ -1,6 +1,6 @@
 # Project Title
 
-These all are for Advanced Digital Image Process with Opencv and Non-Opencv
+These all are for images in Opencv. (Exclude Raw, Bmp files.)
 
 ## Getting Started
 
