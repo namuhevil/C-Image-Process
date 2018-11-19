@@ -4,11 +4,11 @@ These all are for BMP or Raw images.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+First you have to Read the image by its name.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Softwares you have to install.
 
 ```
 Give examples
@@ -78,7 +78,7 @@ See also the list of [contributors](https://github.com/your/project/contributors
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the NamuhEvil
 
 ## Acknowledgments
 
