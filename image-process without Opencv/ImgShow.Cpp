@@ -6,6 +6,9 @@ using namespace std;
 
 using namespace cv;
 
+/*How to use*/
+/* img_show(img_matrix, "apple", 256, 256);*/
+
 void img_show(unsigned char** input_img, String Window_name, int row, int col)
 {
 	CvMat *image = cvCreateMat(row, col, CV_8UC1);

@@ -2,6 +2,9 @@
 
 using namespace std;
 
+/*How to use*/
+/* resize(img_matrix, img_matrix, 256, 256. 2.5);*/
+
 void resize(unsigned char **input_matrix, unsigned char **output_matrix, int row, int col, double ratio)
 {
 	int idx, idy;

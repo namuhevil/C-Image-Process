@@ -2,6 +2,9 @@
 
 using namespace std;
 
+/*How to use*/
+/* ReadFile("apple", img_matrix, 256, 256);*/
+
 bool checkFile(string filename)
 {
 	ifstream testFile;

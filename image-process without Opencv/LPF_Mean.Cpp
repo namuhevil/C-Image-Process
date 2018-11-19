@@ -2,6 +2,9 @@
 
 using namespace std;
 
+/*How to use*/
+/* resize(img_matrix, img_matrix, 256, 256. 5);*/
+
 void local_mean(unsigned char **input_image, unsigned char **output_image, int row, int col, int mask)
 {
 	int Kernel[mask][mask];

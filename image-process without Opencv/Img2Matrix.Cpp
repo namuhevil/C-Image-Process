@@ -1,3 +1,10 @@
+#include <cstdio>
+
+using namespace std;
+
+/* How to use */
+/* unsigend char ** img_matrix = img2matrix(256, 256);*/
+
 unsigned char** img2matrix(int row, int col)
 {
 	unsigned char **img_matrix;
