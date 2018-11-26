@@ -1,4 +1,4 @@
-# Project Title
+# Image Processing in C++
 
 These all are for BMP or Raw images.
 
